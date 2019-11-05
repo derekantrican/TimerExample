@@ -71,9 +71,10 @@ namespace TimerExample.ViewModels
 
 
         #region Constructor
-        public TimerViewModel() : base(null)
+        public TimerViewModel(bool startTimer = true) : base(null)
         {
-            InitTimer();
+            if (startTimer)
+                InitTimer();
         }
         #endregion Constructor
 
